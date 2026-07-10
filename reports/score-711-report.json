@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-10T05:54:11.534750+00:00",
+  "project": "ZORTEX MT8168 Recovery Suite",
+  "policy": "Backup first. Inspect second. Modify last.",
+  "device": {
+    "manufacturer": "Score",
+    "model": "711",
+    "platform": "MediaTek MT8168",
+    "android_version": "10",
+    "firmware": "vnd_tb8168p1_dsp1779111601",
+    "firmware_type": "MediaTek AOSP stock firmware",
+    "google_play_store": false,
+    "google_mobile_services": false,
+    "developer_options": "Not currently available",
+    "usb_debugging": "Not currently available",
+    "package_installer": "Unknown",
+    "recommended_strategy": [
+      "Preserve stock firmware",
+      "Test ordinary APK sideloading",
+      "Inspect USB interfaces from Android host phone",
+      "Create backups before firmware operations"
+    ]
+  },
+  "firmware": {
+    "model": "711",
+    "platform": "MediaTek MT8168",
+    "android_version": "10",
+    "firmware": "vnd_tb8168p1_dsp1779111601",
+    "firmware_type": "MediaTek AOSP stock firmware",
+    "google_play_store": false,
+    "google_mobile_services": false,
+    "assessment": "The available evidence is consistent with a minimal MediaTek AOSP stock build rather than corrupted Google Play installation."
+  },
+  "usb": {
+    "host_platform": "Linux-6.8.0-1052-azure-x86_64-with-glibc2.39",
+    "codespaces_notice": "GitHub Codespaces cannot directly access a tablet physically connected to the user's phone.",
+    "tools": {
+      "adb": null,
+      "fastboot": null,
+      "lsusb": null
+    },
+    "usb_devices": "Not inspected",
+    "adb_devices": "Not inspected"
+  }
+}
