@@ -1,0 +1,48 @@
+{
+  "source_root": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources",
+  "repository_count": 6,
+  "repositories": [
+    {
+      "name": "activity-launcher",
+      "path": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources/activity-launcher",
+      "git_repository": true,
+      "has_android_manifest": true,
+      "has_gradle": true
+    },
+    {
+      "name": "lawnchair",
+      "path": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources/lawnchair",
+      "git_repository": true,
+      "has_android_manifest": true,
+      "has_gradle": true
+    },
+    {
+      "name": "lineage-settings",
+      "path": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources/lineage-settings",
+      "git_repository": true,
+      "has_android_manifest": true,
+      "has_gradle": false
+    },
+    {
+      "name": "lineage-theme-picker",
+      "path": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources/lineage-theme-picker",
+      "git_repository": true,
+      "has_android_manifest": true,
+      "has_gradle": false
+    },
+    {
+      "name": "lineage-trebuchet",
+      "path": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources/lineage-trebuchet",
+      "git_repository": true,
+      "has_android_manifest": true,
+      "has_gradle": false
+    },
+    {
+      "name": "magisk",
+      "path": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources/magisk",
+      "git_repository": true,
+      "has_android_manifest": true,
+      "has_gradle": false
+    }
+  ]
+}

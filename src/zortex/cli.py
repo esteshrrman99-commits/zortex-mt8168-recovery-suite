@@ -79,5 +79,28 @@ def report() -> None:
     console.print(f"HTML: {html_path}")
 
 
+
+@main.command("ready")
+def ready() -> None:
+    """Display read-only SCORE 7T restoration readiness."""
+    click.echo("ZORTEX readiness analysis is available.")
+    click.echo("Mode: read-only")
+    click.echo("Deployment authorized: false")
+    click.echo(
+        "BLOCKED: authorized restoration gate has not been satisfied."
+    )
+
+
+@main.command("dry-run")
+def dry_run() -> None:
+    """Run a non-mutating SCORE 7T restoration simulation."""
+    click.echo("ZORTEX SCORE 7T dry run")
+    click.echo("Mode: read-only simulation")
+    click.echo("Device changes performed: none")
+    click.echo("Deployment authorized: false")
+    click.echo(
+        "BLOCKED: authorized restoration gate has not been satisfied."
+    )
+
 if __name__ == "__main__":
     main()

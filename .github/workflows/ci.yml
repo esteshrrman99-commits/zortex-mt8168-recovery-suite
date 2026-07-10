@@ -1,0 +1,65 @@
+name: ZORTEX CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install package
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e .
+          python -m pip install pytest ruff mypy
+
+      - name: Syntax validation
+        run: |
+          python -m compileall -q src scripts
+
+      - name: Ruff
+        run: |
+          ruff check src tests scripts
+
+      - name: Tests
+        run: |
+          pytest -q
+
+      - name: Build analysis reports
+        run: |
+          python scripts/reference_stack.py audit
+          python scripts/rom_knowledge.py build-profiles
+          python scripts/rom_knowledge.py report
+          python scripts/zortex_dashboard.py build
+
+      - name: Run complete pipeline
+        run: |
+          python scripts/zortex_pipeline.py run
+
+      - name: Upload analysis artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: zortex-analysis-reports
+          path: |
+            artifacts/
+            dashboard/reports/
+            rom-analysis/reports/
+            reference-stack/reports/
+            reports/
+          if-no-files-found: error
