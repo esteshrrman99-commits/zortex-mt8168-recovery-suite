@@ -1,0 +1,464 @@
+{
+  "generated_at": "2026-07-10T22:28:55.768322+00:00",
+  "project": "ZORTEX SCORE 7T ROM Analysis Dashboard",
+  "mode": "read-only",
+  "reference_profile": {
+    "profile_id": "score7t-working-reference",
+    "device_name": "SCORE 7T Working Reference",
+    "board": "P73A0-7T",
+    "soc": "MediaTek MT8168",
+    "architecture": "unknown",
+    "android_version": "10",
+    "api_level": 29,
+    "kernel": null,
+    "treble": true,
+    "vndk": "28/29 observed",
+    "ram": "2 GB",
+    "storage": "32 GB",
+    "packages": [
+      {
+        "package": "org.lineageos.lineageparts",
+        "display_name": "LineageOS Settings",
+        "classification": "privileged_system_app",
+        "version": null,
+        "source": "https://github.com/LineageOS/android_packages_apps_Settings",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": true,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Depends on LineageOS framework APIs and privileged permissions."
+      },
+      {
+        "package": "org.lineageos.lineagesettings",
+        "display_name": "Lineage Settings Storage",
+        "classification": "framework_component",
+        "version": null,
+        "source": "https://github.com/LineageOS",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": true,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Framework-backed settings storage."
+      },
+      {
+        "package": "org.lineageos.customization",
+        "display_name": "Lineage Themes / ThemePicker",
+        "classification": "privileged_system_app",
+        "version": null,
+        "source": "https://github.com/LineageOS/android_packages_apps_ThemePicker",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": true,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Requires matching framework and overlay support."
+      },
+      {
+        "package": "lineageos.platform",
+        "display_name": "LineageOS System",
+        "classification": "framework_component",
+        "version": null,
+        "source": "https://github.com/LineageOS/android",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": true,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Operating-system framework, not an individual app."
+      },
+      {
+        "package": "com.android.launcher3",
+        "display_name": "Trebuchet Launcher",
+        "classification": "privileged_system_app",
+        "version": null,
+        "source": "https://github.com/LineageOS/android_packages_apps_Trebuchet",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": false,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Launcher may be built standalone, but reference integration is ROM-level."
+      },
+      {
+        "package": "me.phh.treble.app",
+        "display_name": "PHH Treble App",
+        "classification": "vendor_dependent_component",
+        "version": null,
+        "source": "https://github.com/TrebleDroid",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": true,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Device-specific GSI hooks require matching TrebleDroid/PHH framework integration."
+      },
+      {
+        "package": "com.android.packageinstaller",
+        "display_name": "Android Package Installer",
+        "classification": "privileged_system_app",
+        "version": null,
+        "source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": true,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Core privileged Android component."
+      },
+      {
+        "package": "com.android.permissioncontroller",
+        "display_name": "Permission Controller",
+        "classification": "privileged_system_app",
+        "version": null,
+        "source": "https://android.googlesource.com/platform/packages/modules/Permission/",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": true,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Core permission-management module."
+      },
+      {
+        "package": "com.android.systemui",
+        "display_name": "Android SystemUI",
+        "classification": "framework_component",
+        "version": null,
+        "source": "https://android.googlesource.com/platform/frameworks/base/",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": true,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Status bar, navigation, lock screen and system user interface."
+      },
+      {
+        "package": "com.android.providers.settings",
+        "display_name": "Settings Provider",
+        "classification": "framework_component",
+        "version": null,
+        "source": "https://android.googlesource.com/platform/frameworks/base/",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": true,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "System settings database provider."
+      },
+      {
+        "package": "com.android.providers.telephony",
+        "display_name": "Phone and Messaging Storage",
+        "classification": "vendor_dependent_component",
+        "version": null,
+        "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": true,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Does not create cellular hardware or eSIM support."
+      },
+      {
+        "package": "com.android.localtransport",
+        "display_name": "LocalTransport",
+        "classification": "privileged_system_app",
+        "version": null,
+        "source": "https://android.googlesource.com/platform/frameworks/base/",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": true,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Android backup transport test/local component."
+      },
+      {
+        "package": "app.lawnchair",
+        "display_name": "Lawnchair",
+        "classification": "user_app",
+        "version": null,
+        "source": "https://github.com/LawnchairLauncher/lawnchair",
+        "partition": null,
+        "privileged": false,
+        "requires_matching_rom": false,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Open-source launcher."
+      },
+      {
+        "package": "de.szalkowski.activitylauncher",
+        "display_name": "Activity Launcher",
+        "classification": "user_app",
+        "version": null,
+        "source": "https://github.com/ActivityLauncher/ActivityLauncher",
+        "partition": null,
+        "privileged": false,
+        "requires_matching_rom": false,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "Can launch exposed activities; cannot create missing privileges."
+      },
+      {
+        "package": "com.topjohnwu.magisk",
+        "display_name": "Magisk",
+        "classification": "boot_component",
+        "version": null,
+        "source": "https://github.com/topjohnwu/Magisk",
+        "partition": null,
+        "privileged": true,
+        "requires_matching_rom": false,
+        "permissions": [],
+        "dependencies": [],
+        "notes": "App alone does not establish root; boot-image integration is separately required."
+      }
+    ]
+  },
+  "target_profile": {
+    "profile_id": "score7t-locked-target",
+    "device_name": "SCORE 7T Locked Target",
+    "board": "P73A0-7T",
+    "soc": "MediaTek MT8168",
+    "architecture": "unknown",
+    "android_version": "10",
+    "api_level": 29,
+    "kernel": null,
+    "treble": null,
+    "vndk": null,
+    "ram": "2 GB",
+    "storage": "32 GB",
+    "packages": []
+  },
+  "comparison": {
+    "reference_profile": "score7t-working-reference",
+    "target_profile": "score7t-locked-target",
+    "matching_packages": [],
+    "missing_from_target": [
+      "app.lawnchair",
+      "com.android.launcher3",
+      "com.android.localtransport",
+      "com.android.packageinstaller",
+      "com.android.permissioncontroller",
+      "com.android.providers.settings",
+      "com.android.providers.telephony",
+      "com.android.systemui",
+      "com.topjohnwu.magisk",
+      "de.szalkowski.activitylauncher",
+      "lineageos.platform",
+      "me.phh.treble.app",
+      "org.lineageos.customization",
+      "org.lineageos.lineageparts",
+      "org.lineageos.lineagesettings"
+    ],
+    "extra_on_target": [],
+    "classification_conflicts": [],
+    "platform_mismatches": [],
+    "deployment_authorized": false,
+    "decision": "BLOCKED: comparison evidence does not authorize firmware deployment."
+  },
+  "reference_audit": {
+    "component_count": 15,
+    "normal_user_apps": [
+      "lawnchair",
+      "activity-launcher"
+    ],
+    "rom_or_privileged_components": [
+      "lineage-settings",
+      "lineage-settings-storage",
+      "lineage-themes",
+      "lineage-platform",
+      "trebuchet",
+      "phh-treble",
+      "package-installer",
+      "permission-controller",
+      "systemui",
+      "settings-provider",
+      "telephony-provider",
+      "localtransport",
+      "magisk"
+    ],
+    "manifest_sha256": "7ab15c8cc9f99aff09fb7e15e1480c64a975e950ac44d58acf75cc98e86cd87c",
+    "deployment_authorized": false,
+    "deployment_decision": "BLOCKED: reference-stack analysis does not authorize device deployment."
+  },
+  "source_inventory": {
+    "source_root": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources",
+    "repository_count": 6,
+    "repositories": [
+      {
+        "name": "activity-launcher",
+        "path": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources/activity-launcher",
+        "git_repository": true,
+        "has_android_manifest": true,
+        "has_gradle": true
+      },
+      {
+        "name": "lawnchair",
+        "path": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources/lawnchair",
+        "git_repository": true,
+        "has_android_manifest": true,
+        "has_gradle": true
+      },
+      {
+        "name": "lineage-settings",
+        "path": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources/lineage-settings",
+        "git_repository": true,
+        "has_android_manifest": true,
+        "has_gradle": false
+      },
+      {
+        "name": "lineage-theme-picker",
+        "path": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources/lineage-theme-picker",
+        "git_repository": true,
+        "has_android_manifest": true,
+        "has_gradle": false
+      },
+      {
+        "name": "lineage-trebuchet",
+        "path": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources/lineage-trebuchet",
+        "git_repository": true,
+        "has_android_manifest": true,
+        "has_gradle": false
+      },
+      {
+        "name": "magisk",
+        "path": "/workspaces/zortex-mt8168-recovery-suite/reference-stack/sources/magisk",
+        "git_repository": true,
+        "has_android_manifest": true,
+        "has_gradle": false
+      }
+    ]
+  },
+  "statistics": {
+    "reference_packages": 15,
+    "target_packages_verified": 0,
+    "missing_from_target": 15,
+    "matching_packages": 0,
+    "source_repositories": 6,
+    "classifications": {
+      "privileged_system_app": 6,
+      "framework_component": 4,
+      "vendor_dependent_component": 2,
+      "user_app": 2,
+      "boot_component": 1
+    }
+  },
+  "normal_user_apps": [
+    "app.lawnchair",
+    "de.szalkowski.activitylauncher"
+  ],
+  "privileged_or_rom_packages": [
+    "com.android.launcher3",
+    "com.android.localtransport",
+    "com.android.packageinstaller",
+    "com.android.permissioncontroller",
+    "com.android.providers.settings",
+    "com.android.providers.telephony",
+    "com.android.systemui",
+    "com.topjohnwu.magisk",
+    "lineageos.platform",
+    "me.phh.treble.app",
+    "org.lineageos.customization",
+    "org.lineageos.lineageparts",
+    "org.lineageos.lineagesettings"
+  ],
+  "dependency_edges": [
+    {
+      "component": "org.lineageos.lineageparts",
+      "depends_on": "matching_rom_framework"
+    },
+    {
+      "component": "org.lineageos.lineageparts",
+      "depends_on": "privileged_system_permissions"
+    },
+    {
+      "component": "org.lineageos.lineagesettings",
+      "depends_on": "matching_rom_framework"
+    },
+    {
+      "component": "org.lineageos.lineagesettings",
+      "depends_on": "privileged_system_permissions"
+    },
+    {
+      "component": "org.lineageos.customization",
+      "depends_on": "matching_rom_framework"
+    },
+    {
+      "component": "org.lineageos.customization",
+      "depends_on": "privileged_system_permissions"
+    },
+    {
+      "component": "lineageos.platform",
+      "depends_on": "matching_rom_framework"
+    },
+    {
+      "component": "lineageos.platform",
+      "depends_on": "privileged_system_permissions"
+    },
+    {
+      "component": "com.android.launcher3",
+      "depends_on": "privileged_system_permissions"
+    },
+    {
+      "component": "me.phh.treble.app",
+      "depends_on": "matching_rom_framework"
+    },
+    {
+      "component": "me.phh.treble.app",
+      "depends_on": "privileged_system_permissions"
+    },
+    {
+      "component": "com.android.packageinstaller",
+      "depends_on": "matching_rom_framework"
+    },
+    {
+      "component": "com.android.packageinstaller",
+      "depends_on": "privileged_system_permissions"
+    },
+    {
+      "component": "com.android.permissioncontroller",
+      "depends_on": "matching_rom_framework"
+    },
+    {
+      "component": "com.android.permissioncontroller",
+      "depends_on": "privileged_system_permissions"
+    },
+    {
+      "component": "com.android.systemui",
+      "depends_on": "matching_rom_framework"
+    },
+    {
+      "component": "com.android.systemui",
+      "depends_on": "privileged_system_permissions"
+    },
+    {
+      "component": "com.android.providers.settings",
+      "depends_on": "matching_rom_framework"
+    },
+    {
+      "component": "com.android.providers.settings",
+      "depends_on": "privileged_system_permissions"
+    },
+    {
+      "component": "com.android.providers.telephony",
+      "depends_on": "matching_rom_framework"
+    },
+    {
+      "component": "com.android.providers.telephony",
+      "depends_on": "privileged_system_permissions"
+    },
+    {
+      "component": "com.android.localtransport",
+      "depends_on": "matching_rom_framework"
+    },
+    {
+      "component": "com.android.localtransport",
+      "depends_on": "privileged_system_permissions"
+    },
+    {
+      "component": "com.topjohnwu.magisk",
+      "depends_on": "privileged_system_permissions"
+    }
+  ],
+  "deployment_authorized": false,
+  "decision": "BLOCKED: dashboard analysis does not authorize firmware deployment."
+}

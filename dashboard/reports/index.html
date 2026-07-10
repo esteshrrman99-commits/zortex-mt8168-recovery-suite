@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZORTEX ROM Dashboard</title>
+<style>
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+  background: #111827;
+  color: #f9fafb;
+}
+h1, h2 { color: #67e8f9; }
+.card {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 16px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 12px;
+}
+.metric {
+  background: #0f172a;
+  border-radius: 10px;
+  padding: 14px;
+}
+.metric strong {
+  display: block;
+  font-size: 1.8rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #374151;
+}
+code {
+  color: #a7f3d0;
+  overflow-wrap: anywhere;
+}
+.blocked {
+  background: #451a1a;
+  border: 1px solid #ef4444;
+  color: #fecaca;
+}
+small { color: #9ca3af; }
+</style>
+</head>
+<body>
+<h1>ZORTEX SCORE 7T ROM Analysis Dashboard</h1>
+<p><small>Generated: 2026-07-10T22:28:55.768322+00:00</small></p>
+
+<div class="card blocked">
+<strong>BLOCKED: dashboard analysis does not authorize firmware deployment.</strong>
+</div>
+
+<div class="grid">
+  <div class="metric">
+    <strong>15</strong>
+    Reference components
+  </div>
+  <div class="metric">
+    <strong>0</strong>
+    Verified target components
+  </div>
+  <div class="metric">
+    <strong>15</strong>
+    Missing or unverified
+  </div>
+  <div class="metric">
+    <strong>6</strong>
+    Public source repositories
+  </div>
+</div>
+
+<div class="card">
+<h2>Component classifications</h2>
+<table>
+<thead><tr><th>Classification</th><th>Count</th></tr></thead>
+<tbody><tr><td>boot_component</td><td>1</td></tr><tr><td>framework_component</td><td>4</td></tr><tr><td>privileged_system_app</td><td>6</td></tr><tr><td>user_app</td><td>2</td></tr><tr><td>vendor_dependent_component</td><td>2</td></tr></tbody>
+</table>
+</div>
+
+<div class="card">
+<h2>Ordinary user-installable applications</h2>
+<ul><li><code>app.lawnchair</code></li><li><code>de.szalkowski.activitylauncher</code></li></ul>
+</div>
+
+<div class="card">
+<h2>ROM, privileged, framework or boot components</h2>
+<ul><li><code>com.android.launcher3</code></li><li><code>com.android.localtransport</code></li><li><code>com.android.packageinstaller</code></li><li><code>com.android.permissioncontroller</code></li><li><code>com.android.providers.settings</code></li><li><code>com.android.providers.telephony</code></li><li><code>com.android.systemui</code></li><li><code>com.topjohnwu.magisk</code></li><li><code>lineageos.platform</code></li><li><code>me.phh.treble.app</code></li><li><code>org.lineageos.customization</code></li><li><code>org.lineageos.lineageparts</code></li><li><code>org.lineageos.lineagesettings</code></li></ul>
+</div>
+
+<div class="card">
+<h2>Missing or unverified on target</h2>
+<ul><li><code>app.lawnchair</code></li><li><code>com.android.launcher3</code></li><li><code>com.android.localtransport</code></li><li><code>com.android.packageinstaller</code></li><li><code>com.android.permissioncontroller</code></li><li><code>com.android.providers.settings</code></li><li><code>com.android.providers.telephony</code></li><li><code>com.android.systemui</code></li><li><code>com.topjohnwu.magisk</code></li><li><code>de.szalkowski.activitylauncher</code></li><li><code>lineageos.platform</code></li><li><code>me.phh.treble.app</code></li><li><code>org.lineageos.customization</code></li><li><code>org.lineageos.lineageparts</code></li><li><code>org.lineageos.lineagesettings</code></li></ul>
+</div>
+
+<div class="card">
+<h2>Platform mismatches</h2>
+<ul><li>None recorded</li></ul>
+<p>Unknown fields are not treated as proven matches.</p>
+</div>
+
+<div class="card">
+<h2>Engineering interpretation</h2>
+<p>
+The working reference tablet contains a combined Android system-image stack.
+Installing visible APK names alone cannot reproduce the same environment.
+ROM-level components require a matching framework, vendor implementation,
+kernel, device tree, partition layout and authorized installation path.
+</p>
+</div>
+</body>
+</html>

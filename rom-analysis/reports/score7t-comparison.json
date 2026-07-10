@@ -1,0 +1,27 @@
+{
+  "reference_profile": "score7t-working-reference",
+  "target_profile": "score7t-locked-target",
+  "matching_packages": [],
+  "missing_from_target": [
+    "app.lawnchair",
+    "com.android.launcher3",
+    "com.android.localtransport",
+    "com.android.packageinstaller",
+    "com.android.permissioncontroller",
+    "com.android.providers.settings",
+    "com.android.providers.telephony",
+    "com.android.systemui",
+    "com.topjohnwu.magisk",
+    "de.szalkowski.activitylauncher",
+    "lineageos.platform",
+    "me.phh.treble.app",
+    "org.lineageos.customization",
+    "org.lineageos.lineageparts",
+    "org.lineageos.lineagesettings"
+  ],
+  "extra_on_target": [],
+  "classification_conflicts": [],
+  "platform_mismatches": [],
+  "deployment_authorized": false,
+  "decision": "BLOCKED: comparison evidence does not authorize firmware deployment."
+}

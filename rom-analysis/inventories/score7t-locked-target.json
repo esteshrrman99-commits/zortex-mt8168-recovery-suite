@@ -1,0 +1,15 @@
+{
+  "profile_id": "score7t-locked-target",
+  "device_name": "SCORE 7T Locked Target",
+  "board": "P73A0-7T",
+  "soc": "MediaTek MT8168",
+  "architecture": "unknown",
+  "android_version": "10",
+  "api_level": 29,
+  "kernel": null,
+  "treble": null,
+  "vndk": null,
+  "ram": "2 GB",
+  "storage": "32 GB",
+  "packages": []
+}
