@@ -1,20 +1,15 @@
 [build-system]
-requires = ["setuptools>=69", "wheel"]
-build-backend = "setuptools.build_meta"
+requires=["setuptools>=69","wheel"]
+build-backend="setuptools.build_meta"
 
 [project]
-name = "zortex-mt8168-recovery-suite"
-version = "0.2.0"
-description = "Backup-first diagnostics and recovery toolkit for MT8168 Android tablets"
-requires-python = ">=3.10"
+name="zortex-mt8168-recovery-suite"
+version="1.0.0"
+description="Read-only Android restoration validation platform"
+requires-python=">=3.11"
 
-dependencies = [
-    "click",
-    "rich",
+dependencies=[
+"click",
+"rich",
+"pydantic",
 ]
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
-[project.scripts]
-zortex = "zortex.cli:main"
