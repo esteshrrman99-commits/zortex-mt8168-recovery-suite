@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-07-10T20:56:57.301881+00:00",
+  "mode": "read-only",
+  "host": {
+    "platform": "Linux-6.8.0-1052-azure-x86_64-with-glibc2.39",
+    "system": "Linux",
+    "architecture": "x86_64",
+    "python": "3.12.1"
+  },
+  "tools": {
+    "git": {
+      "installed": true,
+      "path": "/usr/local/bin/git",
+      "version": "git version 2.53.0"
+    },
+    "python": {
+      "installed": true,
+      "path": "/workspaces/zortex-mt8168-recovery-suite/.venv/bin/python",
+      "version": "Python 3.12.1"
+    },
+    "adb": {
+      "installed": false,
+      "path": null,
+      "version": null
+    },
+    "fastboot": {
+      "installed": false,
+      "path": null,
+      "version": null
+    },
+    "lsusb": {
+      "installed": false,
+      "path": null,
+      "version": null
+    },
+    "mtk": {
+      "installed": false,
+      "path": null,
+      "version": null
+    }
+  },
+  "codespaces_usb_notice": "GitHub Codespaces cannot directly access a USB device attached to the user's Motorola phone."
+}

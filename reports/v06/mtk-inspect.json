@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-07-10T20:57:38.736157+00:00",
+  "mode": "read-only",
+  "mtkclient_installed": false,
+  "allowed_operations": [
+    "host dependency inspection",
+    "USB mode classification",
+    "chip identification",
+    "partition-table acquisition after authorization",
+    "read-only backup planning"
+  ],
+  "blocked_operations": [
+    "write",
+    "erase",
+    "format",
+    "unlock",
+    "payload execution",
+    "security configuration modification"
+  ],
+  "physical_device_observed": false,
+  "status": "MTKCLIENT NOT INSTALLED"
+}

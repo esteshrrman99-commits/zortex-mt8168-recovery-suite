@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-07-10T20:58:48.997649+00:00",
+  "status": "BLOCKED",
+  "passed_gates": 0,
+  "total_gates": 16,
+  "readiness_percent": 0.0,
+  "gates": {
+    "gate_01_device_identity": false,
+    "gate_02_usb_mode_identified": false,
+    "gate_03_partition_table_verified": false,
+    "gate_04_dual_backup_verified": false,
+    "gate_05_artifact_hashes_verified": false,
+    "gate_06_boot_image_parsed": false,
+    "gate_07_dtb_dtbo_verified": false,
+    "gate_08_hardware_matrix_complete": false,
+    "gate_09_avb_chain_documented": false,
+    "gate_10_rollback_indexes_recorded": false,
+    "gate_11_firmware_provenance_verified": false,
+    "gate_12_partition_fit_verified": false,
+    "gate_13_vendor_compatibility_verified": false,
+    "gate_14_authorized_trust_path_verified": false,
+    "gate_15_dry_run_verified": false,
+    "gate_16_human_approval_recorded": false
+  },
+  "decision": "BLOCKED: authorized restoration gate has not been satisfied.",
+  "next_required_evidence": [
+    "Enumerate an authorized physical USB interface",
+    "Acquire exact partition table read-only",
+    "Create two independently verified backups",
+    "Inspect boot, recovery, DTBO and vbmeta",
+    "Document AVB keys and rollback indexes",
+    "Identify an official or authorized trust path"
+  ]
+}

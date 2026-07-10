@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-07-10T20:58:19.794503+00:00",
+  "evidence_status": "User-observed; requires software verification",
+  "device": {
+    "brand": "SCORE",
+    "model": "7T",
+    "board": "P73A0-7T",
+    "reported_soc_family": "MediaTek MT8168",
+    "ram": "2 GB DDR",
+    "storage": "32 GB eMMC",
+    "android": "10",
+    "build_family": "vnd_tb8168p1",
+    "usb": "USB-C",
+    "fcc_id": "2A3XN-SCORE7T"
+  },
+  "unknown_components": [
+    "exact display panel",
+    "touchscreen controller",
+    "Wi-Fi chipset firmware",
+    "audio codec",
+    "kernel version",
+    "DTB and DTBO",
+    "partition geometry",
+    "AVB topology",
+    "trusted key fingerprint",
+    "rollback indexes",
+    "bootloader state"
+  ]
+}

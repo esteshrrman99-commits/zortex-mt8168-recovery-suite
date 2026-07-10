@@ -13,3 +13,6 @@ dependencies=[
 "rich",
 "pydantic",
 ]
+
+[project.scripts]
+zortex = "zortex.cli_v06:main"
