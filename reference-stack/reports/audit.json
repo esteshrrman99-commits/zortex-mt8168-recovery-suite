@@ -1,0 +1,25 @@
+{
+  "component_count": 15,
+  "normal_user_apps": [
+    "lawnchair",
+    "activity-launcher"
+  ],
+  "rom_or_privileged_components": [
+    "lineage-settings",
+    "lineage-settings-storage",
+    "lineage-themes",
+    "lineage-platform",
+    "trebuchet",
+    "phh-treble",
+    "package-installer",
+    "permission-controller",
+    "systemui",
+    "settings-provider",
+    "telephony-provider",
+    "localtransport",
+    "magisk"
+  ],
+  "manifest_sha256": "7ab15c8cc9f99aff09fb7e15e1480c64a975e950ac44d58acf75cc98e86cd87c",
+  "deployment_authorized": false,
+  "deployment_decision": "BLOCKED: reference-stack analysis does not authorize device deployment."
+}

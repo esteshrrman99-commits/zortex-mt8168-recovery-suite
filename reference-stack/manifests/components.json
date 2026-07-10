@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "target": {
+    "name": "SCORE 7T reference architecture",
+    "board": "P73A0-7T",
+    "soc_family": "MediaTek MT8168",
+    "android_generation": "Android 10 reference screenshots",
+    "deployment_authorized": false
+  },
+  "components": [
+    {
+      "id": "lineage-settings",
+      "display_name": "LineageOS Settings",
+      "package": "org.lineageos.lineageparts",
+      "classification": "privileged_system_app",
+      "source": "https://github.com/LineageOS/android_packages_apps_Settings",
+      "installable_as_normal_apk": false,
+      "requires_matching_rom": true,
+      "notes": "Depends on LineageOS framework APIs and privileged permissions."
+    },
+    {
+      "id": "lineage-settings-storage",
+      "display_name": "Lineage Settings Storage",
+      "package": "org.lineageos.lineagesettings",
+      "classification": "framework_component",
+      "source": "https://github.com/LineageOS",
+      "installable_as_normal_apk": false,
+      "requires_matching_rom": true,
+      "notes": "Framework-backed settings storage."
+    },
+    {
+      "id": "lineage-themes",
+      "display_name": "Lineage Themes / ThemePicker",
+      "package": "org.lineageos.customization",
+      "classification": "privileged_system_app",
+      "source": "https://github.com/LineageOS/android_packages_apps_ThemePicker",
+      "installable_as_normal_apk": false,
+      "requires_matching_rom": true,
+      "notes": "Requires matching framework and overlay support."
+    },
+    {
+      "id": "lineage-platform",
+      "display_name": "LineageOS System",
+      "package": "lineageos.platform",
+      "classification": "framework_component",
+      "source": "https://github.com/LineageOS/android",
+      "installable_as_normal_apk": false,
+      "requires_matching_rom": true,
+      "notes": "Operating-system framework, not an individual app."
+    },
+    {
+      "id": "trebuchet",
+      "display_name": "Trebuchet Launcher",
+      "package": "com.android.launcher3",
+      "classification": "privileged_system_app",
+      "source": "https://github.com/LineageOS/android_packages_apps_Trebuchet",
+      "installable_as_normal_apk": "build-dependent",
+      "requires_matching_rom": false,
+      "notes": "Launcher may be built standalone, but reference integration is ROM-level."
+    },
+    {
+      "id": "phh-treble",
+      "display_name": "PHH Treble App",
+      "package": "me.phh.treble.app",
+      "classification": "vendor_dependent_component",
+      "source": "https://github.com/TrebleDroid",
+      "legacy_source": "https://github.com/phhusson/treble_experimentations",
+      "installable_as_normal_apk": false,
+      "requires_matching_rom": true,
+      "notes": "Device-specific GSI hooks require matching TrebleDroid/PHH framework integration."
+    },
+    {
+      "id": "package-installer",
+      "display_name": "Android Package Installer",
+      "package": "com.android.packageinstaller",
+      "classification": "privileged_system_app",
+      "source": "https://android.googlesource.com/platform/packages/apps/PackageInstaller/",
+      "installable_as_normal_apk": false,
+      "requires_matching_rom": true,
+      "notes": "Core privileged Android component."
+    },
+    {
+      "id": "permission-controller",
+      "display_name": "Permission Controller",
+      "package": "com.android.permissioncontroller",
+      "classification": "privileged_system_app",
+      "source": "https://android.googlesource.com/platform/packages/modules/Permission/",
+      "installable_as_normal_apk": false,
+      "requires_matching_rom": true,
+      "notes": "Core permission-management module."
+    },
+    {
+      "id": "systemui",
+      "display_name": "Android SystemUI",
+      "package": "com.android.systemui",
+      "classification": "framework_component",
+      "source": "https://android.googlesource.com/platform/frameworks/base/",
+      "installable_as_normal_apk": false,
+      "requires_matching_rom": true,
+      "notes": "Status bar, navigation, lock screen and system user interface."
+    },
+    {
+      "id": "settings-provider",
+      "display_name": "Settings Provider",
+      "package": "com.android.providers.settings",
+      "classification": "framework_component",
+      "source": "https://android.googlesource.com/platform/frameworks/base/",
+      "installable_as_normal_apk": false,
+      "requires_matching_rom": true,
+      "notes": "System settings database provider."
+    },
+    {
+      "id": "telephony-provider",
+      "display_name": "Phone and Messaging Storage",
+      "package": "com.android.providers.telephony",
+      "classification": "vendor_dependent_component",
+      "source": "https://android.googlesource.com/platform/packages/providers/TelephonyProvider/",
+      "installable_as_normal_apk": false,
+      "requires_matching_rom": true,
+      "notes": "Does not create cellular hardware or eSIM support."
+    },
+    {
+      "id": "localtransport",
+      "display_name": "LocalTransport",
+      "package": "com.android.localtransport",
+      "classification": "privileged_system_app",
+      "source": "https://android.googlesource.com/platform/frameworks/base/",
+      "installable_as_normal_apk": false,
+      "requires_matching_rom": true,
+      "notes": "Android backup transport test/local component."
+    },
+    {
+      "id": "lawnchair",
+      "display_name": "Lawnchair",
+      "package": "app.lawnchair",
+      "classification": "user_app",
+      "source": "https://github.com/LawnchairLauncher/lawnchair",
+      "installable_as_normal_apk": true,
+      "requires_matching_rom": false,
+      "notes": "Open-source launcher."
+    },
+    {
+      "id": "activity-launcher",
+      "display_name": "Activity Launcher",
+      "package": "de.szalkowski.activitylauncher",
+      "classification": "user_app",
+      "source": "https://github.com/ActivityLauncher/ActivityLauncher",
+      "installable_as_normal_apk": true,
+      "requires_matching_rom": false,
+      "notes": "Can launch exposed activities; cannot create missing privileges."
+    },
+    {
+      "id": "magisk",
+      "display_name": "Magisk",
+      "package": "com.topjohnwu.magisk",
+      "classification": "boot_component",
+      "source": "https://github.com/topjohnwu/Magisk",
+      "installable_as_normal_apk": false,
+      "requires_matching_rom": false,
+      "notes": "App alone does not establish root; boot-image integration is separately required."
+    }
+  ]
+}
