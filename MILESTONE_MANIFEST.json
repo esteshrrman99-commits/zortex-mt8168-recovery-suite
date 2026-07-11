@@ -1,0 +1,11 @@
+{
+  "milestone": "ZORTEX Policy Objectives and Simulation",
+  "version": "1.0.0",
+  "modules": [
+    "capability_registry",
+    "policy_objectives",
+    "simulations",
+    "restoration_planner"
+  ],
+  "hardware_execution": false
+}
