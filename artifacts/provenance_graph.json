@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "nodes": [
+    {
+      "id": "095f4c49de86e31785e5",
+      "kind": "device",
+      "data": {
+        "model": "SCORE7T",
+        "chipset": "MT8168"
+      },
+      "created_at": "2026-07-11T16:19:50.696598+00:00"
+    },
+    {
+      "id": "300c23b85620a1462679",
+      "kind": "evidence",
+      "data": {
+        "type": "usb_probe",
+        "status": "no_enumeration"
+      },
+      "created_at": "2026-07-11T16:19:50.696672+00:00"
+    }
+  ],
+  "edges": [
+    {
+      "source": "095f4c49de86e31785e5",
+      "relation": "produced",
+      "target": "300c23b85620a1462679"
+    }
+  ]
+}

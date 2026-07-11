@@ -1,0 +1,14 @@
+{
+  "milestone": "ZORTEX Elite Diagnostics and Provenance Fabric",
+  "version": "2.0.0",
+  "modules": [
+    "inventory",
+    "evidence",
+    "compatibility",
+    "provenance",
+    "attestation",
+    "plugins",
+    "reports"
+  ],
+  "elite_feature": "Provenance + Attestation Fabric"
+}
