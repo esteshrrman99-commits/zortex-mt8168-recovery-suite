@@ -1,0 +1,281 @@
+<!doctype html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZORTEX Command Dashboard</title>
+<style>body{font-family:system-ui;margin:0;background:#0b1020;color:#e9eefc}
+header{padding:20px;background:#111936}main{padding:16px;display:grid;gap:16px}
+section{background:#151f3f;border:1px solid #2d3b72;border-radius:12px;padding:16px}
+pre{white-space:pre-wrap;word-break:break-word;background:#0d1530;padding:12px;border-radius:8px}</style>
+</head><body><header><h1>ZORTEX Command Dashboard</h1>
+<small>Generated 2026-07-11T16:40:21.177665+00:00</small></header><main><section><h2>Device Inventory</h2><pre>[
+  {
+    &quot;device_id&quot;: &quot;score7t-001&quot;,
+    &quot;manufacturer&quot;: &quot;Keefe&quot;,
+    &quot;model&quot;: &quot;711&quot;,
+    &quot;chipset&quot;: &quot;MT8168&quot;,
+    &quot;android_version&quot;: &quot;10&quot;,
+    &quot;build_fingerprint&quot;: &quot;unknown&quot;,
+    &quot;usb_mode&quot;: &quot;unknown&quot;,
+    &quot;trust_state&quot;: &quot;unverified&quot;
+  }
+]</pre></section><section><h2>Device Profiles</h2><pre>[
+  {
+    &quot;profile_id&quot;: &quot;score7t-711&quot;,
+    &quot;manufacturer&quot;: &quot;Keefe&quot;,
+    &quot;model&quot;: &quot;711&quot;,
+    &quot;chipset&quot;: &quot;MT8168&quot;,
+    &quot;architecture&quot;: &quot;arm64-v8a&quot;,
+    &quot;android_version&quot;: &quot;10&quot;,
+    &quot;board_id&quot;: &quot;unknown&quot;,
+    &quot;partition_layout&quot;: &quot;unknown&quot;,
+    &quot;notes&quot;: &quot;&quot;
+  }
+]</pre></section><section><h2>Evidence Timeline</h2><pre>[
+  {
+    &quot;data&quot;: {},
+    &quot;event_type&quot;: &quot;milestone&quot;,
+    &quot;summary&quot;: &quot;SDK dashboard installed&quot;,
+    &quot;timestamp&quot;: &quot;2026-07-11T16:40:20.714388+00:00&quot;
+  }
+]</pre></section><section><h2>Reports</h2><pre>[
+  {
+    &quot;title&quot;: &quot;ZORTEX Elite Diagnostic Report&quot;,
+    &quot;generated_at&quot;: &quot;2026-07-11T16:18:29.367977+00:00&quot;,
+    &quot;sections&quot;: {
+      &quot;inventory&quot;: [],
+      &quot;compatibility&quot;: {
+        &quot;score&quot;: 0,
+        &quot;maximum&quot;: 100,
+        &quot;grade&quot;: &quot;D&quot;,
+        &quot;mandatory_blockers&quot;: [
+          &quot;board_match&quot;,
+          &quot;partition_fit&quot;,
+          &quot;firmware_provenance&quot;
+        ],
+        &quot;status&quot;: &quot;REVIEW_REQUIRED&quot;,
+        &quot;checks&quot;: {}
+      },
+      &quot;attestation&quot;: {
+        &quot;algorithm&quot;: &quot;HMAC-SHA256&quot;,
+        &quot;payload_sha256&quot;: &quot;62f9fb4254029b60d83b5cad5aba2764d37f6bbe80fd6aca20d71898d1cf2633&quot;,
+        &quot;signature&quot;: &quot;fb89a42acdd9fcd0930962693be3161cb2fef758d09d4d58cadcc525b9ad0f14&quot;,
+        &quot;attested_at&quot;: &quot;2026-07-11T16:18:29.367747+00:00&quot;
+      }
+    }
+  },
+  {
+    &quot;title&quot;: &quot;ZORTEX Elite Diagnostic Report&quot;,
+    &quot;generated_at&quot;: &quot;2026-07-11T16:19:50.905333+00:00&quot;,
+    &quot;sections&quot;: {
+      &quot;inventory&quot;: [
+        {
+          &quot;device_id&quot;: &quot;score7t-001&quot;,
+          &quot;manufacturer&quot;: &quot;Keefe&quot;,
+          &quot;model&quot;: &quot;711&quot;,
+          &quot;chipset&quot;: &quot;MT8168&quot;,
+          &quot;android_version&quot;: &quot;10&quot;,
+          &quot;build_fingerprint&quot;: &quot;unknown&quot;,
+          &quot;usb_mode&quot;: &quot;unknown&quot;,
+          &quot;trust_state&quot;: &quot;unverified&quot;
+        }
+      ],
+      &quot;compatibility&quot;: {
+        &quot;score&quot;: 0,
+        &quot;maximum&quot;: 100,
+        &quot;grade&quot;: &quot;D&quot;,
+        &quot;mandatory_blockers&quot;: [
+          &quot;board_match&quot;,
+          &quot;partition_fit&quot;,
+          &quot;firmware_provenance&quot;
+        ],
+        &quot;status&quot;: &quot;REVIEW_REQUIRED&quot;,
+        &quot;checks&quot;: {}
+      },
+      &quot;attestation&quot;: {
+        &quot;algorithm&quot;: &quot;HMAC-SHA256&quot;,
+        &quot;payload_sha256&quot;: &quot;62f9fb4254029b60d83b5cad5aba2764d37f6bbe80fd6aca20d71898d1cf2633&quot;,
+        &quot;signature&quot;: &quot;fb89a42acdd9fcd0930962693be3161cb2fef758d09d4d58cadcc525b9ad0f14&quot;,
+        &quot;attested_at&quot;: &quot;2026-07-11T16:19:50.905188+00:00&quot;
+      }
+    }
+  },
+  {
+    &quot;generated_at&quot;: &quot;2026-07-10T05:54:11.534750+00:00&quot;,
+    &quot;project&quot;: &quot;ZORTEX MT8168 Recovery Suite&quot;,
+    &quot;policy&quot;: &quot;Backup first. Inspect second. Modify last.&quot;,
+    &quot;device&quot;: {
+      &quot;manufacturer&quot;: &quot;Score&quot;,
+      &quot;model&quot;: &quot;711&quot;,
+      &quot;platform&quot;: &quot;MediaTek MT8168&quot;,
+      &quot;android_version&quot;: &quot;10&quot;,
+      &quot;firmware&quot;: &quot;vnd_tb8168p1_dsp1779111601&quot;,
+      &quot;firmware_type&quot;: &quot;MediaTek AOSP stock firmware&quot;,
+      &quot;google_play_store&quot;: false,
+      &quot;google_mobile_services&quot;: false,
+      &quot;developer_options&quot;: &quot;Not currently available&quot;,
+      &quot;usb_debugging&quot;: &quot;Not currently available&quot;,
+      &quot;package_installer&quot;: &quot;Unknown&quot;,
+      &quot;recommended_strategy&quot;: [
+        &quot;Preserve stock firmware&quot;,
+        &quot;Test ordinary APK sideloading&quot;,
+        &quot;Inspect USB interfaces from Android host phone&quot;,
+        &quot;Create backups before firmware operations&quot;
+      ]
+    },
+    &quot;firmware&quot;: {
+      &quot;model&quot;: &quot;711&quot;,
+      &quot;platform&quot;: &quot;MediaTek MT8168&quot;,
+      &quot;android_version&quot;: &quot;10&quot;,
+      &quot;firmware&quot;: &quot;vnd_tb8168p1_dsp1779111601&quot;,
+      &quot;firmware_type&quot;: &quot;MediaTek AOSP stock firmware&quot;,
+      &quot;google_play_store&quot;: false,
+      &quot;google_mobile_services&quot;: false,
+      &quot;assessment&quot;: &quot;The available evidence is consistent with a minimal MediaTek AOSP stock build rather than corrupted Google Play installation.&quot;
+    },
+    &quot;usb&quot;: {
+      &quot;host_platform&quot;: &quot;Linux-6.8.0-1052-azure-x86_64-with-glibc2.39&quot;,
+      &quot;codespaces_notice&quot;: &quot;GitHub Codespaces cannot directly access a tablet physically connected to the user&#x27;s phone.&quot;,
+      &quot;tools&quot;: {
+        &quot;adb&quot;: null,
+        &quot;fastboot&quot;: null,
+        &quot;lsusb&quot;: null
+      },
+      &quot;usb_devices&quot;: &quot;Not inspected&quot;,
+      &quot;adb_devices&quot;: &quot;Not inspected&quot;
+    }
+  },
+  {
+    &quot;generated_at&quot;: &quot;2026-07-10T20:56:57.301881+00:00&quot;,
+    &quot;mode&quot;: &quot;read-only&quot;,
+    &quot;host&quot;: {
+      &quot;platform&quot;: &quot;Linux-6.8.0-1052-azure-x86_64-with-glibc2.39&quot;,
+      &quot;system&quot;: &quot;Linux&quot;,
+      &quot;architecture&quot;: &quot;x86_64&quot;,
+      &quot;python&quot;: &quot;3.12.1&quot;
+    },
+    &quot;tools&quot;: {
+      &quot;git&quot;: {
+        &quot;installed&quot;: true,
+        &quot;path&quot;: &quot;/usr/local/bin/git&quot;,
+        &quot;version&quot;: &quot;git version 2.53.0&quot;
+      },
+      &quot;python&quot;: {
+        &quot;installed&quot;: true,
+        &quot;path&quot;: &quot;/workspaces/zortex-mt8168-recovery-suite/.venv/bin/python&quot;,
+        &quot;version&quot;: &quot;Python 3.12.1&quot;
+      },
+      &quot;adb&quot;: {
+        &quot;installed&quot;: false,
+        &quot;path&quot;: null,
+        &quot;version&quot;: null
+      },
+      &quot;fastboot&quot;: {
+        &quot;installed&quot;: false,
+        &quot;path&quot;: null,
+        &quot;version&quot;: null
+      },
+      &quot;lsusb&quot;: {
+        &quot;installed&quot;: false,
+        &quot;path&quot;: null,
+        &quot;version&quot;: null
+      },
+      &quot;mtk&quot;: {
+        &quot;installed&quot;: false,
+        &quot;path&quot;: null,
+        &quot;version&quot;: null
+      }
+    },
+    &quot;codespaces_usb_notice&quot;: &quot;GitHub Codespaces cannot directly access a USB device attached to the user&#x27;s Motorola phone.&quot;
+  },
+  {
+    &quot;generated_at&quot;: &quot;2026-07-10T20:58:19.794503+00:00&quot;,
+    &quot;evidence_status&quot;: &quot;User-observed; requires software verification&quot;,
+    &quot;device&quot;: {
+      &quot;brand&quot;: &quot;SCORE&quot;,
+      &quot;model&quot;: &quot;7T&quot;,
+      &quot;board&quot;: &quot;P73A0-7T&quot;,
+      &quot;reported_soc_family&quot;: &quot;MediaTek MT8168&quot;,
+      &quot;ram&quot;: &quot;2 GB DDR&quot;,
+      &quot;storage&quot;: &quot;32 GB eMMC&quot;,
+      &quot;android&quot;: &quot;10&quot;,
+      &quot;build_family&quot;: &quot;vnd_tb8168p1&quot;,
+      &quot;usb&quot;: &quot;USB-C&quot;,
+      &quot;fcc_id&quot;: &quot;2A3XN-SCORE7T&quot;
+    },
+    &quot;unknown_components&quot;: [
+      &quot;exact display panel&quot;,
+      &quot;touchscreen controller&quot;,
+      &quot;Wi-Fi chipset firmware&quot;,
+      &quot;audio codec&quot;,
+      &quot;kernel version&quot;,
+      &quot;DTB and DTBO&quot;,
+      &quot;partition geometry&quot;,
+      &quot;AVB topology&quot;,
+      &quot;trusted key fingerprint&quot;,
+      &quot;rollback indexes&quot;,
+      &quot;bootloader state&quot;
+    ]
+  },
+  {
+    &quot;generated_at&quot;: &quot;2026-07-10T20:57:38.736157+00:00&quot;,
+    &quot;mode&quot;: &quot;read-only&quot;,
+    &quot;mtkclient_installed&quot;: false,
+    &quot;allowed_operations&quot;: [
+      &quot;host dependency inspection&quot;,
+      &quot;USB mode classification&quot;,
+      &quot;chip identification&quot;,
+      &quot;partition-table acquisition after authorization&quot;,
+      &quot;read-only backup planning&quot;
+    ],
+    &quot;blocked_operations&quot;: [
+      &quot;write&quot;,
+      &quot;erase&quot;,
+      &quot;format&quot;,
+      &quot;unlock&quot;,
+      &quot;payload execution&quot;,
+      &quot;security configuration modification&quot;
+    ],
+    &quot;physical_device_observed&quot;: false,
+    &quot;status&quot;: &quot;MTKCLIENT NOT INSTALLED&quot;
+  },
+  {
+    &quot;generated_at&quot;: &quot;2026-07-10T20:58:48.997649+00:00&quot;,
+    &quot;status&quot;: &quot;BLOCKED&quot;,
+    &quot;passed_gates&quot;: 0,
+    &quot;total_gates&quot;: 16,
+    &quot;readiness_percent&quot;: 0.0,
+    &quot;gates&quot;: {
+      &quot;gate_01_device_identity&quot;: false,
+      &quot;gate_02_usb_mode_identified&quot;: false,
+      &quot;gate_03_partition_table_verified&quot;: false,
+      &quot;gate_04_dual_backup_verified&quot;: false,
+      &quot;gate_05_artifact_hashes_verified&quot;: false,
+      &quot;gate_06_boot_image_parsed&quot;: false,
+      &quot;gate_07_dtb_dtbo_verified&quot;: false,
+      &quot;gate_08_hardware_matrix_complete&quot;: false,
+      &quot;gate_09_avb_chain_documented&quot;: false,
+      &quot;gate_10_rollback_indexes_recorded&quot;: false,
+      &quot;gate_11_firmware_provenance_verified&quot;: false,
+      &quot;gate_12_partition_fit_verified&quot;: false,
+      &quot;gate_13_vendor_compatibility_verified&quot;: false,
+      &quot;gate_14_authorized_trust_path_verified&quot;: false,
+      &quot;gate_15_dry_run_verified&quot;: false,
+      &quot;gate_16_human_approval_recorded&quot;: false
+    },
+    &quot;decision&quot;: &quot;BLOCKED: authorized restoration gate has not been satisfied.&quot;,
+    &quot;next_required_evidence&quot;: [
+      &quot;Enumerate an authorized physical USB interface&quot;,
+      &quot;Acquire exact partition table read-only&quot;,
+      &quot;Create two independently verified backups&quot;,
+      &quot;Inspect boot, recovery, DTBO and vbmeta&quot;,
+      &quot;Document AVB keys and rollback indexes&quot;,
+      &quot;Identify an official or authorized trust path&quot;
+    ]
+  },
+  {
+    &quot;generated_at&quot;: &quot;2026-07-11T07:41:17.857418+00:00&quot;,
+    &quot;mode&quot;: &quot;read-only&quot;,
+    &quot;usb_enumeration&quot;: &quot;Unavailable&quot;,
+    &quot;adb_devices&quot;: &quot;Unavailable&quot;,
+    &quot;recognized_mode&quot;: &quot;No physical USB evidence&quot;
+  }
+]</pre></section></main></body></html>

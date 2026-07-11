@@ -1,0 +1,13 @@
+{
+  "milestone": "ZORTEX SDK, Knowledge Base, Timeline, and Dashboard",
+  "version": "3.0.0",
+  "modules": [
+    "device_profiles",
+    "timeline",
+    "knowledge_base",
+    "sdk",
+    "dashboard",
+    "health"
+  ],
+  "primary_feature": "ZORTEX Plugin SDK + Command Dashboard"
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "profile_id": "score7t-711",
+    "manufacturer": "Keefe",
+    "model": "711",
+    "chipset": "MT8168",
+    "architecture": "arm64-v8a",
+    "android_version": "10",
+    "board_id": "unknown",
+    "partition_layout": "unknown",
+    "notes": ""
+  }
+]
