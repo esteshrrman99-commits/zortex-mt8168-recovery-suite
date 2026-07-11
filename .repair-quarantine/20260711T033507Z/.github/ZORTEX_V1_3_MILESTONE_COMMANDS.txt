@@ -1,0 +1,9 @@
+ONE-COMMAND INSTALL AFTER EXTRACTION
+
+bash install_v1_3.sh
+
+THEN SAVE
+
+git add .
+git commit -m "Build ZORTEX v1.3 AI assistant console"
+git push
