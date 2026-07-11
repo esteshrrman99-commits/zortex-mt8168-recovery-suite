@@ -1,0 +1,33 @@
+MOTOROLA-SAFE EXECUTION ORDER
+
+1. Extract this ZIP into the repository root.
+
+2. Install:
+python -m pip install -e .
+
+3. Run milestone tests:
+pytest -q tests/test_graph.py
+
+4. Build graph:
+python scripts/zortex_graph.py build
+
+5. View summary:
+python scripts/zortex_graph.py summary
+
+6. Query:
+python scripts/zortex_graph.py query orchestrator
+
+7. Check evidence gaps:
+python scripts/zortex_graph.py missing-evidence
+
+8. Run all tests:
+pytest -q --maxfail=1
+
+9. Stage:
+git add .
+
+10. Commit:
+git commit -m "Build ZORTEX v1.2 knowledge graph"
+
+11. Push:
+git push

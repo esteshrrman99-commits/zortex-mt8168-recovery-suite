@@ -1,15 +1,15 @@
 {
-  "milestone": "ZORTEX v2.0 orchestrator foundation",
-  "version": "2.0.0-alpha.1",
-  "files": [
-    "ZORTEX_V2_MILESTONE_COMMANDS.txt",
-    "docs/orchestrator/README.md",
-    "scripts/zortex_orchestrator.py",
-    "src/zortex/orchestrator/__init__.py",
-    "src/zortex/orchestrator/engine.py",
-    "src/zortex/orchestrator/models.py",
-    "src/zortex/orchestrator/policy.py",
-    "tests/test_orchestrator.py"
+  "milestone": "ZORTEX v1.2 Knowledge Graph",
+  "version": "1.2.0",
+  "capabilities": [
+    "repository graph",
+    "typed nodes and edges",
+    "Python import relationships",
+    "query",
+    "summary",
+    "reverse dependency support",
+    "missing evidence detection",
+    "JSON export"
   ],
   "device_mutation": false,
   "destructive_git": false
