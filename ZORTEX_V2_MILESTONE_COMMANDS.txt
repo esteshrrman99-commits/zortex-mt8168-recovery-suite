@@ -1,0 +1,26 @@
+MOTOROLA-SAFE EXECUTION ORDER
+
+1. Unzip this package into the repository root.
+
+2. Run:
+python -m pip install -e .
+
+3. Test only the milestone:
+pytest -q tests/test_orchestrator.py
+
+4. Dry-run:
+python scripts/zortex_orchestrator.py dry-run
+
+5. Full repository tests:
+pytest -q --maxfail=1
+
+6. Run orchestrator:
+python scripts/zortex_orchestrator.py run
+
+7. Build bundle:
+python scripts/zortex_orchestrator.py bundle
+
+8. Commit:
+git add .
+git commit -m "Build ZORTEX v2.0 orchestrator foundation"
+git push origin v1.1-dashboard
